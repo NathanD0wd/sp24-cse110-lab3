@@ -1,7 +1,95 @@
+head {
+
+    link {}
+}
+
 header {
-    background-color: red
+    background-color: rebeccapurple;
+}
+
+nav {
+    ul {
+        li {}
+    }
 }
 
 body {
-    background-color: rgb(228, 50, 89)
+    display: block;
+    background-color: rgb(228, 50, 89);
+
+    h1,
+    h2 {}
+}
+
+section {
+    display: block;
+}
+
+#Attendence {}
+
+#PreviousRuns {}
+
+#JokeroftheWeek {
+    display: box;
+    box-align: center;
+
+    h3 {
+        color: orange;
+    }
+
+    img {}
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+}
+
+#FutureSeeds {}
+
+#add_info {
+    display: box;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    margin: 10px 10px 20px 20px;
+
+    border: 50rem;
+    border-radius: 10px;
+
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    background-color: #FAFAFA;
+
+    button[type="submit"]:hover {
+        text-decoration: underline;
+    }
+}
+
+footer {
+
+    display: flexbox;
+
+
+
+    #fieldset {
+        display: block;
+
+        label {
+            color: green;
+        }
+
+        #personalInfo {}
+
+        #interests {}
+
+        #membership {}
+
+        #experience {}
+
+    }
 }
