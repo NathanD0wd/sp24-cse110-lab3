@@ -3,22 +3,76 @@ head {
     link {}
 }
 
+/* CSS section to style the header */
 header {
-    background-color: rebeccapurple;
+    display: box;
+
+    /* Background gradient */
+    background:
+    linear-gradient(
+        180deg,
+        rgba(119, 3, 243, 0.2) 39%,
+        rgb(211, 28, 156) 96%
+      ) center center / 1600px 200px no-repeat,
+    rebeccapurple;
+
+    /* Shadow */
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    /* Red border */
+    border-style: solid;
+    border-color:hsl(0, 81%, 38%);
+    border-width: 5px;
+    border-radius: 30px;
+
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+
+    /* Text editor for title */
+    .container {
+        font-size: 20px;
+        text-align: center;
+        color: rgb(213, 216, 198);
+        text-decoration: underline;
+        padding-left: 40px;
+    }
+    /* Text editor for list */
+    nav {
+        ul {
+            li {
+                color: rgba(1,1,1,0);
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+    }
 }
 
-nav {
-    ul {
-        li {}
-    }
+a:hover {
+    color: #fdfdfd;
+}
+a:visited {
+    color: #40df6b;
+}
+a:active {
+    color: #070000;
 }
 
 body {
     display: block;
     background-color: rgb(228, 50, 89);
 
-    h1,
-    h2 {}
+    h1 {
+        font-size: 50px;
+        font-family: Copperplate, Impact, 'Arial Narrow Bold', sans-serif;
+    }
 }
 
 section {
@@ -59,9 +113,7 @@ section {
     border: 50rem;
     border-radius: 10px;
 
-    padding-left: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px 0px 10px 25px;
 
     background-color: #FAFAFA;
 
