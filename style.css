@@ -6,6 +6,8 @@ head {
 /* CSS section to style the header */
 header {
     display: box;
+    position: sticky;
+    top: 5px;
 
     /* Background gradient */
     background:
@@ -13,7 +15,7 @@ header {
         180deg,
         rgba(119, 3, 243, 0.2) 39%,
         rgb(211, 28, 156) 96%
-      ) center center / 1600px 200px no-repeat,
+      ) center center / 100vw 100% no-repeat,
     rebeccapurple;
 
     /* Shadow */
@@ -55,6 +57,7 @@ header {
     }
 }
 
+/* Color changes for hyperlinks */
 a:hover {
     color: #fdfdfd;
 }
@@ -62,12 +65,12 @@ a:visited {
     color: #40df6b;
 }
 a:active {
-    color: #070000;
+    color: #2f1caa;
 }
 
 body {
     display: block;
-    background-color: rgb(228, 50, 89);
+    background-color: rgba(119, 3, 243, 0.7);
 
     h1 {
         font-size: 50px;
@@ -79,30 +82,62 @@ section {
     display: block;
 }
 
-#Attendence {}
+#Attendance {
+    scroll-margin-top: 170px;
+}
 
-#PreviousRuns {}
+#PreviousRuns {
+    scroll-margin-top: 170px;
+}
 
 #JokeroftheWeek {
-    display: box;
-    box-align: center;
+    scroll-margin-top: 170px;
 
     h3 {
         color: orange;
     }
 
-    img {}
-
-    .container {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ccc;
+    img {
+        display: flex;
     }
 }
 
-#FutureSeeds {}
+#FutureSeeds {
+    scroll-margin-top: 170px;
+    display: grid;
+
+    grid-template-columns: 100 px, 480 px, 100 px;
+
+    /* Positioning within grid for different items */
+    h3 {
+        font-size: 30px;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        font-family: Copperplate;
+    }
+    
+    ol {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    video {
+        grid-row-start: 2;
+        border-style: solid;
+        border-color:hsl(202, 67%, 54%);
+        border-width: 5px;
+    }
+
+    audio {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        padding-top: 30px;
+    }
+}
+
+main details {
+    display: none;
+}
 
 #add_info {
     display: box;
