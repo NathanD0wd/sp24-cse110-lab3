@@ -1,6 +1,10 @@
-head {
+* {
+    color: skyblue;
+}
 
-    link {}
+h1, h2, h3, h4 {
+    font-family: Copperplate, Impact, 'Arial Narrow Bold', sans-serif;
+    color: orange;
 }
 
 /* CSS section to style the header */
@@ -70,11 +74,11 @@ a:active {
 
 body {
     display: block;
-    background-color: rgba(119, 3, 243, 0.7);
-
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 1), rgba(211, 28, 156, 1));
+    
     h1 {
         font-size: 50px;
-        font-family: Copperplate, Impact, 'Arial Narrow Bold', sans-serif;
     }
 }
 
@@ -84,18 +88,34 @@ section {
 
 #Attendance {
     scroll-margin-top: 170px;
+
+    /* From ChatGPT */
+    input[type="checkbox"] + label {
+        cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    }
+
+    input[type="checkbox"]:checked + label {
+        color: darkblue; /* Change color when checkbox is checked */
+        font-weight: bold; /* Change font weight when checkbox is checked */
+        text-decoration: underline;
+        padding-left: 30px;
+    }
 }
 
 #PreviousRuns {
     scroll-margin-top: 170px;
+
+    h2 > span {
+        color: orange;
+    }
+}
+
+i.highlight {
+    background-color: yellow;
 }
 
 #JokeroftheWeek {
     scroll-margin-top: 170px;
-
-    h3 {
-        color: orange;
-    }
 
     .flex-img {
         display: flex;
@@ -110,6 +130,14 @@ section {
 
 }
 
+#FutureSeeds:has(ol) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    align-self: center;
+    padding-bottom: 5em;
+    padding-right: 20px;
+}
+
 #FutureSeeds {
     scroll-margin-top: 170px;
     display: grid;
@@ -117,20 +145,17 @@ section {
     grid-template-columns: 100 px, 480 px, 100 px;
 
     /* Positioning within grid for different items */
-    h3 {
+    & h3 {
         font-size: 30px;
         grid-row-start: 1;
         grid-column-start: 1;
         font-family: Copperplate;
     }
     
-    ol {
-        grid-row-start: 2;
-        grid-column-start: 1;
-    }
 
     video {
         grid-row-start: 2;
+        grid-column-start: 2;
         border-style: solid;
         border-color:hsl(202, 67%, 54%);
         border-width: 5px;
@@ -139,7 +164,8 @@ section {
     audio {
         grid-column-start: 2;
         grid-row-start: 1;
-        padding-top: 30px;
+        align-self: center;
+        padding-left: 95px;
     }
 }
 
@@ -147,44 +173,128 @@ main details {
     display: none;
 }
 
-#add_info {
-    display: box;
-    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
-
-    margin: 10px 10px 20px 20px;
-
-    border: 50rem;
-    border-radius: 10px;
-
-    padding: 10px 0px 10px 25px;
-
-    background-color: #FAFAFA;
-
-    button[type="submit"]:hover {
-        text-decoration: underline;
-    }
-}
-
 footer {
+    display: block;
 
-    display: flexbox;
-
-
-
-    #fieldset {
-        display: block;
-
-        label {
-            color: green;
+    #personalInfo {
+        display: box;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+    
+        margin: 10px 10px 20px 20px;
+    
+        border: 50rem;
+        border-radius: 10px;
+    
+        padding: 10px 0px 10px 25px;
+    
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        
+        #full_name {
+            background-image: radial-gradient(circle, 
+            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
         }
 
-        #personalInfo {}
+        #email {
+            background-image: radial-gradient(circle, 
+            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        }
 
-        #interests {}
+        #phone {
+            background-image: radial-gradient(circle, 
+            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        }
 
-        #membership {}
+        #dob {
+            background-image: radial-gradient(circle, 
+            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        }
+    }
 
-        #experience {}
+    #interests {
 
+        display: box;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+    
+        margin: 10px 10px 20px 20px;
+    
+        border: 50rem;
+        border-radius: 10px;
+    
+        padding: 10px 0px 10px 25px;
+    
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+    }
+
+    #membership {
+        display: box;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+    
+        margin: 10px 10px 20px 20px;
+    
+        border: 50rem;
+        border-radius: 10px;
+    
+        padding: 10px 0px 10px 25px;
+    
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        
+        #membership_type {
+            color: black;
+
+            background-image: radial-gradient(circle, 
+            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        }
+    }
+
+    #experience {
+        display: box;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+    
+        margin: 10px 10px 20px 20px;
+    
+        border: 50rem;
+        border-radius: 10px;
+    
+        padding: 10px 0px 10px 25px;
+    
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+
+        #experience_level {
+            background-image: radial-gradient(circle, 
+            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        }
+    }
+
+    #add_info {
+        display: box;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+    
+        margin: 10px 10px 20px 20px;
+    
+        border: 50rem;
+        border-radius: 10px;
+    
+        padding: 10px 0px 10px 25px;
+    
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+            
+        button[type="submit"]:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            background-image: radial-gradient(circle, 
+            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        }
+
+        #additional_info {
+            background-image: radial-gradient(circle, 
+            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+        }
     }
 }
