@@ -97,9 +97,17 @@ section {
         color: orange;
     }
 
-    img {
+    .flex-img {
         display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
+
+    .last-img {
+        align-self: center;
+        justify-content: center;
+    }
+
 }
 
 #FutureSeeds {
