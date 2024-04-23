@@ -12,6 +12,7 @@ header {
     display: box;
     position: sticky;
     top: 5px;
+    z-index: 1000;
 
     /* Background gradient */
     background:
@@ -45,7 +46,7 @@ header {
     .container {
         font-size: 20px;
         text-align: center;
-        color: rgb(213, 216, 198);
+        color: orange;
         text-decoration: underline;
         padding-left: 40px;
     }
@@ -242,8 +243,6 @@ footer {
         rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
         
         #membership_type {
-            color: black;
-
             background-image: radial-gradient(circle, 
             rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
         }
