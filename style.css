@@ -9,7 +9,6 @@ h1, h2, h3, h4 {
 
 /* CSS section to style the header */
 header {
-    display: box;
     position: sticky;
     top: 5px;
     z-index: 1000;
@@ -28,8 +27,8 @@ header {
 
     margin-top: 0px;
     margin-bottom: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 20vw;
+    margin-right: 20vw;
 
     /* Red border */
     border-style: solid;
@@ -37,29 +36,26 @@ header {
     border-width: 5px;
     border-radius: 30px;
 
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 4vw;
+    padding-left: 0px;
     padding-bottom: 0px;
     padding-top: 10px;
+}
 
-    /* Text editor for title */
-    .container {
-        font-size: 20px;
-        text-align: center;
-        color: orange;
-        text-decoration: underline;
-        padding-left: 40px;
-    }
-    /* Text editor for list */
-    nav {
-        ul {
-            li {
-                color: rgba(1,1,1,0);
-                text-align: center;
-                font-size: 12px;
-            }
-        }
-    }
+/* Text editor for title */
+.agenda_title {
+    font-size: 20px;
+    text-align: center;
+    color: orange;
+    text-decoration: underline;
+    padding-left: 40px;
+}
+
+/* Text editor for list */
+nav ul li {
+    color: rgba(1,1,1,0);
+    text-align: center;
+    font-size: 12px;
 }
 
 /* Color changes for hyperlinks */
@@ -77,10 +73,10 @@ body {
     display: block;
     background-image: radial-gradient(circle, 
     rgba(119, 3, 243, 1), rgba(211, 28, 156, 1));
-    
-    h1 {
-        font-size: 50px;
-    }
+}
+
+h1 {
+    font-size: 50px;
 }
 
 section {
@@ -89,26 +85,26 @@ section {
 
 #Attendance {
     scroll-margin-top: 170px;
+}
 
-    /* From ChatGPT */
-    input[type="checkbox"] + label {
-        cursor: pointer; /* Change cursor to pointer to indicate clickable */
-    }
+/* From ChatGPT */
+input[type="checkbox"] + label {
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+}
 
-    input[type="checkbox"]:checked + label {
-        color: darkblue; /* Change color when checkbox is checked */
-        font-weight: bold; /* Change font weight when checkbox is checked */
-        text-decoration: underline;
-        padding-left: 30px;
-    }
+input[type="checkbox"]:checked + label {
+    color: darkblue; /* Change color when checkbox is checked */
+    font-weight: bold; /* Change font weight when checkbox is checked */
+    text-decoration: underline;
+    padding-left: 30px;
 }
 
 #PreviousRuns {
     scroll-margin-top: 170px;
+}
 
-    h2 > span {
-        color: orange;
-    }
+h2 > span {
+    color: orange;
 }
 
 i.highlight {
@@ -117,18 +113,17 @@ i.highlight {
 
 #JokeroftheWeek {
     scroll-margin-top: 170px;
+}
 
-    .flex-img {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+.flex-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-    .last-img {
-        align-self: center;
-        justify-content: center;
-    }
-
+.last-img {
+    align-self: center;
+    justify-content: center;
 }
 
 #FutureSeeds:has(ol) {
@@ -143,31 +138,31 @@ i.highlight {
     scroll-margin-top: 170px;
     display: grid;
 
-    grid-template-columns: 100 px, 480 px, 100 px;
+    grid-template-columns: 100px, 480px;
+}
 
-    /* Positioning within grid for different items */
-    & h3 {
-        font-size: 30px;
-        grid-row-start: 1;
-        grid-column-start: 1;
-        font-family: Copperplate;
-    }
-    
+/* Positioning within grid for different items */
+& h3 {
+    font-size: 30px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-family: Copperplate;
+}
 
-    video {
-        grid-row-start: 2;
-        grid-column-start: 2;
-        border-style: solid;
-        border-color:hsl(202, 67%, 54%);
-        border-width: 5px;
-    }
 
-    audio {
-        grid-column-start: 2;
-        grid-row-start: 1;
-        align-self: center;
-        padding-left: 95px;
-    }
+video {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    border-style: solid;
+    border-color:hsl(202, 67%, 54%);
+    border-width: 5px;
+}
+
+audio {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    align-self: center;
+    padding-left: 95px;
 }
 
 main details {
@@ -176,124 +171,124 @@ main details {
 
 footer {
     display: block;
+}
 
-    #personalInfo {
-        display: box;
-        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+#PersonalInfo {
+    display: box;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    margin: 10px 10px 20px 20px;
+
+    border: 50rem;
+    border-radius: 10px;
+
+    padding: 10px 0px 10px 25px;
+
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
     
-        margin: 10px 10px 20px 20px;
-    
-        border: 50rem;
-        border-radius: 10px;
-    
-        padding: 10px 0px 10px 25px;
-    
+    #full_name {
         background-image: radial-gradient(circle, 
         rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+    }
+
+    #email {
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+    }
+
+    #phone {
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+    }
+
+    #dob {
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+    }
+}
+
+#interests {
+
+    display: box;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    margin: 10px 10px 20px 20px;
+
+    border: 50rem;
+    border-radius: 10px;
+
+    padding: 10px 0px 10px 25px;
+
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+}
+
+#membership {
+    display: box;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    margin: 10px 10px 20px 20px;
+
+    border: 50rem;
+    border-radius: 10px;
+
+    padding: 10px 0px 10px 25px;
+
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+    
+    #membership_type {
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+    }
+}
+
+#experience {
+    display: box;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    margin: 10px 10px 20px 20px;
+
+    border: 50rem;
+    border-radius: 10px;
+
+    padding: 10px 0px 10px 25px;
+
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+
+    #experience_level {
+        background-image: radial-gradient(circle, 
+        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+    }
+}
+
+#add_info {
+    display: box;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+
+    margin: 10px 10px 20px 20px;
+
+    border: 50rem;
+    border-radius: 10px;
+
+    padding: 10px 0px 10px 25px;
+
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
         
-        #full_name {
-            background-image: radial-gradient(circle, 
-            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        }
-
-        #email {
-            background-image: radial-gradient(circle, 
-            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        }
-
-        #phone {
-            background-image: radial-gradient(circle, 
-            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        }
-
-        #dob {
-            background-image: radial-gradient(circle, 
-            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        }
+    button[type="submit"]:hover {
+        text-decoration: underline;
     }
 
-    #interests {
-
-        display: box;
-        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
-    
-        margin: 10px 10px 20px 20px;
-    
-        border: 50rem;
-        border-radius: 10px;
-    
-        padding: 10px 0px 10px 25px;
-    
+    button {
         background-image: radial-gradient(circle, 
         rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
     }
 
-    #membership {
-        display: box;
-        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
-    
-        margin: 10px 10px 20px 20px;
-    
-        border: 50rem;
-        border-radius: 10px;
-    
-        padding: 10px 0px 10px 25px;
-    
+    #additional_info {
         background-image: radial-gradient(circle, 
         rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        
-        #membership_type {
-            background-image: radial-gradient(circle, 
-            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        }
-    }
-
-    #experience {
-        display: box;
-        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
-    
-        margin: 10px 10px 20px 20px;
-    
-        border: 50rem;
-        border-radius: 10px;
-    
-        padding: 10px 0px 10px 25px;
-    
-        background-image: radial-gradient(circle, 
-        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-
-        #experience_level {
-            background-image: radial-gradient(circle, 
-            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        }
-    }
-
-    #add_info {
-        display: box;
-        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
-    
-        margin: 10px 10px 20px 20px;
-    
-        border: 50rem;
-        border-radius: 10px;
-    
-        padding: 10px 0px 10px 25px;
-    
-        background-image: radial-gradient(circle, 
-        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-            
-        button[type="submit"]:hover {
-            text-decoration: underline;
-        }
-
-        button {
-            background-image: radial-gradient(circle, 
-            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        }
-
-        #additional_info {
-            background-image: radial-gradient(circle, 
-            rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-        }
     }
 }
