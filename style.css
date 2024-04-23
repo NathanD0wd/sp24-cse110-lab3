@@ -138,7 +138,7 @@ i.highlight {
     scroll-margin-top: 170px;
     display: grid;
 
-    grid-template-columns: 100px, 480px;
+    grid-template-columns: 40vw;
 }
 
 /* Positioning within grid for different items */
@@ -147,6 +147,7 @@ i.highlight {
     grid-row-start: 1;
     grid-column-start: 1;
     font-family: Copperplate;
+    padding-left: 3vw;
 }
 
 
