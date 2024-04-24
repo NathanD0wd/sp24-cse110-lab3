@@ -40,12 +40,14 @@ header {
     padding-left: 0px;
     padding-bottom: 0px;
     padding-top: 10px;
+
+    text-align: center;
 }
 
 /* Text editor for title */
 .agenda_title {
+    display: inline-block;
     font-size: 20px;
-    text-align: center;
     color: orange;
     text-decoration: underline;
     padding-left: 40px;
@@ -55,6 +57,7 @@ header {
 nav ul li {
     text-align: center;
     font-size: 12px;
+    list-style: none;
 }
 
 h2 ~ p, h3 ~ p {
@@ -78,14 +81,16 @@ body {
     rgba(119, 3, 243, 1), rgba(211, 28, 156, 1));
 }
 
+/* Main Title */
 h1 {
     font-size: 50px;
 }
 
+/* Display everything as a block unless otherwise noted */
 section {
     display: block;
 }
-
+/* Scroll Margin for Attendance Tab */
 #Attendance {
     scroll-margin-top: 170px;
 }
@@ -95,6 +100,7 @@ input[type="checkbox"] + label {
     cursor: pointer; /* Change cursor to pointer to indicate clickable */
 }
 
+/* From ChatGPT */
 input[type="checkbox"]:checked + label {
     color: darkblue; /* Change color when checkbox is checked */
     font-weight: bold; /* Change font weight when checkbox is checked */
@@ -102,33 +108,45 @@ input[type="checkbox"]:checked + label {
     padding-left: 30px;
 }
 
+/* Scroll Margin for Previous Runs Tab */
 #PreviousRuns {
     scroll-margin-top: 170px;
 }
 
+/* Left margin padding for titles */
+h1, h3, h2, h4 {
+    padding-left: 2vh;
+}
+
+/* Set color in span in title to orange */
 h2 > span {
     color: orange;
 }
 
+/* Highlight just highlight */
 i.highlight {
     background-color: yellow;
 }
 
+/* Scroll Margin for JotW Tab */
 #JokeroftheWeek {
     scroll-margin-top: 170px;
 }
 
+/* Set up flex display */
 .flex-img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+/* Keep last image centered */
 .last-img {
     align-self: center;
     justify-content: center;
 }
 
+/* Set grid position for list */
 #FutureSeeds:has(ol) {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -137,6 +155,7 @@ i.highlight {
     padding-right: 20px;
 }
 
+/* Scroll Margin for Future Seeds Tab and set up grid */
 #FutureSeeds {
     scroll-margin-top: 170px;
     display: grid;
@@ -149,10 +168,7 @@ i.highlight {
     font-size: 30px;
     grid-row-start: 1;
     grid-column-start: 1;
-    font-family: Copperplate;
-    padding-left: 3vw;
 }
-
 
 video {
     grid-row-start: 2;
@@ -169,14 +185,12 @@ audio {
     padding-left: 95px;
 }
 
+/* Hide pointless drop down menu */
 main details {
     display: none;
 }
 
-footer {
-    display: block;
-}
-
+/* All of ther following set box border, background gradient, and text color for club app */
 #PersonalInfo {
     display: box;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
@@ -190,30 +204,29 @@ footer {
 
     background-image: radial-gradient(circle, 
     rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-    
-    #full_name {
-        background-image: radial-gradient(circle, 
-        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-    }
+}
 
-    #email {
-        background-image: radial-gradient(circle, 
-        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-    }
+#full_name {
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+}
 
-    #phone {
-        background-image: radial-gradient(circle, 
-        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-    }
+#email {
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+}
 
-    #dob {
-        background-image: radial-gradient(circle, 
-        rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
-    }
+#phone {
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
+}
+
+#dob {
+    background-image: radial-gradient(circle, 
+    rgba(119, 3, 243, 0.8), rgba(211, 28, 156, 0.9));
 }
 
 #interests {
-
     display: box;
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
 
