@@ -53,9 +53,12 @@ header {
 
 /* Text editor for list */
 nav ul li {
-    color: rgba(1,1,1,0);
     text-align: center;
     font-size: 12px;
+}
+
+h2 ~ p, h3 ~ p {
+    font-family: 'Arial Narrow Bold';
 }
 
 /* Color changes for hyperlinks */
@@ -138,7 +141,7 @@ i.highlight {
     scroll-margin-top: 170px;
     display: grid;
 
-    grid-template-columns: 100px, 480px;
+    grid-template-columns: 40vw;
 }
 
 /* Positioning within grid for different items */
@@ -147,6 +150,7 @@ i.highlight {
     grid-row-start: 1;
     grid-column-start: 1;
     font-family: Copperplate;
+    padding-left: 3vw;
 }
 
 
